@@ -8,4 +8,14 @@
     <AssemblyName>Qinlili.$(MSBuildProjectName)</AssemblyName>
   </PropertyGroup>
 
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="call BuildCaesium.bat" />
+  </Target>
+
+  <ItemGroup>
+    <None Update="caesium.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
