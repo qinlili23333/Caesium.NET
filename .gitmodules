@@ -1,0 +1,3 @@
+[submodule "libcaesium"]
+	path = libcaesium
+	url = https://github.com/Lymphatus/libcaesium.git
